@@ -12,4 +12,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 <div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	<i class="fas fa-phone"></i>
+	<i class="fas fa-envelope"></i>
+	<i class="fas fa-map-marker-alt"></i>
 </div><!-- #secondary -->

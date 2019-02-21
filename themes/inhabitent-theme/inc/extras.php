@@ -22,7 +22,6 @@ function red_starter_body_classes( $classes ) {
 add_filter( 'body_class', 'red_starter_body_classes' );
 
 function inhabitent_login_url() {
-//changes logo on wp login screen
 	return get_site_url();
 }
 add_filter( 'login_headerurl', 'inhabitent_login_url');

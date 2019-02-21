@@ -2,4 +2,41 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* Front-page */
+
+.front-hero-image {
+  background-image: url('../../logos/inhabitent-logo-full.svg'),
+    url('../../images/home-hero.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: center, center;
+  height: 700px;
+}
+
+.about-hero-image {
+  background-image: url('../../images/about-hero.jpg');
+  height: 700px;
+}
+
+.site-main {
+  .post-info {
+    display: flex;
+  }
+
+  img {
+    width: 25%;
+    height: 200px;
+  }
+}
+
+.hero-image-header {
+  height: 700px;
+}
+
+.entry-title {
+  color: white;
+}
+
+.footer {
+  display: flex;
+}

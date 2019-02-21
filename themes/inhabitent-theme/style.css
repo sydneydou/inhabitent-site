@@ -434,8 +434,8 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  width: 100%;
+  padding-left: 600px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -467,6 +467,13 @@ a {
     display: block;
     text-decoration: none; }
 
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  position: absolute; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -496,6 +503,18 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.front-logo {
+  background-image: url(../../logos/inhabitent-logo-tent-white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 30px;
+  background-position-x: right 50px;
+  background-position-x: 9em; }
+
+.menu-homepage-menu-container li {
+  padding: 10px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -669,4 +688,34 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/* Front-page */
+.front-hero-image {
+  background-image: url("../../logos/inhabitent-logo-full.svg"), url("../../images/home-hero.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: center, center;
+  height: 700px; }
+
+.about-hero-image {
+  background-image: url("../../images/about-hero.jpg");
+  height: 700px; }
+
+.site-main .post-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.site-main img {
+  width: 25%;
+  height: 200px; }
+
+.hero-image-header {
+  height: 700px; }
+
+.entry-title {
+  color: white; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
