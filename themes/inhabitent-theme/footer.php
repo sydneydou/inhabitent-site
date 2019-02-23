@@ -1,8 +1,9 @@
 <?php
+
 /**
  * The template for displaying the footer.
  *
- * @package inhabitent-theme
+ * @package RED_Starter_Theme
  */
 
 ?>
@@ -11,6 +12,7 @@
 			<div>
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="footer-info">
 				<div class="contact-info">
 					<h2> Contact Info</h2>
 				<p><i class="fas fa-envelope"></i> info@inhabitent.com </p>
@@ -24,12 +26,17 @@
 				<div class="business-hours">
 					<h2> Business Hours</h2>
 				<p><span> Monday-Friday:</span> 9am to 5pm</p>
-				
+				<p><span> Saturday:</span> 10am to 2pm</p>
+				<p><span> Sunday:</span> Closed</p>
+</div>
+</div>
+
+
 				
 
 				<h3 class="copyright"> Copyright &copy; 2019 inhabitent</h3>
 			</footer><!-- #colophon -->
-		</div><!-- #page -->
+		
 
 		<?php wp_footer(); ?>
 
