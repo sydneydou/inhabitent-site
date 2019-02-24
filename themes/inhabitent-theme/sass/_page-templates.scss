@@ -13,20 +13,50 @@
   height: 700px;
 }
 
-.about-hero-image {
-  background-image: url('../../images/about-hero.jpg');
-  height: 700px;
-}
 
 .site-main {
+
   .post-info{
     display:flex;
+    padding-left: 5em;
+    padding-right: 5em;
+    
   }
-  img {
-    width: 25%;
-    height: 200px;
+  .post-chunk{
+    margin: 10px;
+    border: 1px solid #a1a1a1;
+    margin-bottom: 2em;
+  
+  }
+  .high-line{
+    font-size: 11px;
+    padding-right: 200px;
+    text-transform: uppercase;
+  }
+  .journal-title{
+        text-align: left;
+        font-size: 20px;
+        color: #248a83;
+        text-transform: uppercase;
+        font-weight: 600;
+        height: 100px;
+        font-family: 'Merriweather Web';
+    }
+  }
+ 
+h2{
+
+  text-transform:uppercase;
+  font-family: 'Novecento Sans Web';
+  font-weight:200px;
+}
+.post-data{
+
+  button{
+    border: solid black .5px;
   }
 }
+
 
 .hero-image-header {
   height: 700px;
@@ -36,13 +66,97 @@
   color: white;
 }
 
+
+
+ 
+.latest-adventures{
+  display:
+  grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  
+  .one{
+    background-image: url('../../images/adventure-photos/canoe-girl.jpg');
+    background-size: cover;
+    height: 600px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .two{
+    background-image: url('../../images/adventure-photos/beach-bonfire.jpg');
+    background-size: cover;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .three{
+    background-image: url('../../images/adventure-photos/mountain-hikers.jpg');
+    background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .four{
+    background-image: url('../../images/adventure-photos/night-sky.jpg');
+    background-size: cover;
+    grid-column:3 / 4;
+    grid-row: 2 / 3;
+  }
+  div{
+    border:black 2px solid;
+    height:300px;
+    
+  }
+}
+
+//shop stuff front page
+.shop-name{
+  display: flex;
+  justify-content: center;
+  margin: 6em;
+  img{
+    width:65px;
+  }
+  .product-chunk{
+    border: 1px solid #e1e1e1;
+    margin:10px;
+    text-align:center;
+    padding: 20px;
+    border-top: 5px solid #e1e1e1;
+
+    p{
+      margin-bottom:0;
+    }
+  }
+  .product-link{
+    background-color:#248A83;
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    
+    
+    a{
+      text-decoration: none;
+      color:white;
+      
+    }
+  }
+}
+
 //footer css
 .site-footer {
-  background-image: url('../../images/dark-wood.png');
+  background-image: url('../../logos/inhabitent-logo-text.svg'), url('../../images/dark-wood.png');
+  background-repeat: no-repeat, repeat;
+  background-size: 250px,auto;
+  background-position: 900px 55px;
   color: white;
+  height:350px;
 
   .footer-info {
     display: flex;
+    padding-left: 8em;
+    padding-top: 2em;
   }
 
   .business-hours {
@@ -53,12 +167,14 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 16px;
-    padding-bottom: 2em;
+    padding-top: 50px;
+    margin-bottom:0;
   }
 
   h2 {
     color: #d99054;
     text-transform: uppercase;
+    font-size:18px;
   }
 }
 
@@ -72,5 +188,100 @@
   .widget-area {
     flex-direction: column-reverse;
     align-items: flex-end;
+    width: 30%;
+    border-left: 1px solid #e1e1e1;
+    margin-top: 40px;
+    text-align: left;
+    padding-left:40px;
+
+    ul{
+      list-style-type: none;
+
+    }
+    h2{
+      font-size: 25px;
+      font-weight: 800;
+      text-align:left;
+    }
   }
+}
+
+.widget{
+  ul{
+    margin-left: 0;
+    padding-left: 0;
+    }
+  }
+
+
+
+//** shop stuff
+.entry-title{
+  color:black;
+}
+
+.archive{
+  .shop-loop{
+    display:flex;
+    flex-wrap: wrap;
+    
+  }
+  article{
+    width:25%;
+  }
+}
+
+.page-title, .taxonomy-description{
+  display:none;
+}
+
+
+//**journal page
+
+.blog .entry-title{
+  position: relative;
+    bottom: 450px;
+    
+    left: -70px;
+    font-size: 25px;
+}
+
+.blog{
+  .site-content{
+    text-align:center;
+  }
+  .content-area{
+    margin-top: 40px;
+  }
+  }
+
+.single{
+  display:flex;
+  .content-area{
+    width:70%;
+  }
+  .widget-area {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    width:30%;
+    border-left: 1px solid #e1e1e1;
+    margin-top:30px;
+    padding-top:100px;
+    text-align:left;
+  }
+
+}
+
+//** about page
+
+.about-hero-image {
+  background-image: url('../../images/about-hero.jpg');
+  height: 700px;
+  background-size:cover;
+}
+
+.page{
+  text-align:center;
+  display:flex;
+
 }

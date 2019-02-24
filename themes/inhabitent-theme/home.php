@@ -7,6 +7,7 @@
  */
 
 get_header(); ?>
+
 <div class="content-main">
 
 	<div id="primary" class="content-area">

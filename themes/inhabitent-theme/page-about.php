@@ -1,16 +1,17 @@
 
-<div class="about-hero-image"></div>
+
 <?php
 /**
  * Template Name: About Page
  */
 get_header(); ?>
+<div class="about-hero-image"></div>
    <div id="primary" class="content-area">
         <?php while ( have_posts() ) : the_post(); ?>
             <?php get_template_part( 'content', 'page' ); ?>
         <?php endwhile; // End of the loop. ?>
     </div><!-- #primary -->
-<?php get_footer(); ?>
+
 
 <?php
 /**
@@ -33,5 +34,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

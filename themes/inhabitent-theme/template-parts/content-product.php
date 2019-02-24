@@ -6,7 +6,7 @@
  */
 
 ?>
-
+<div class="product-whole">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
@@ -36,3 +36,4 @@
 		<?php red_starter_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+			</div>

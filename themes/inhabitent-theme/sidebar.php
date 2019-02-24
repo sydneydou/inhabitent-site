@@ -11,8 +11,16 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <div id="secondary" class="widget-area" role="complementary">
+
+	<h2>Contact Hours</h2>
+	<div class="contact-sidebar">
+	<i class="fas fa-phone"> 778-456-7891</i>
+	<br>
+	<i class="fas fa-envelope"> info@inhabitent.com</i>
+	<br>
+	<i class="fas fa-map-marker-alt"> 1490 W Broadway
+Vancouver, BC V6H 1H5</i>
+</div>
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-	<i class="fas fa-phone"></i>
-	<i class="fas fa-envelope"></i>
-	<i class="fas fa-map-marker-alt"></i>
+
 </div><!-- #secondary -->

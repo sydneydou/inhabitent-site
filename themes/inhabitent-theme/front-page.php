@@ -7,25 +7,23 @@
  */
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<div id="primary" class="content-area">
 		<section class="front-hero-image"> </section>
-		<h2> Shop Stuff</h2>
-
-		
-		
+			<h2> Shop Stuff </h2>
 		<section class="shop-name">
 			
 			<?php $product_types = get_terms("product_type") ?>
-			
 			<?php foreach ($product_types as $value) : setup_postdata($value); ?>
-			<div>
-			<img src=<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $value->slug . '.svg' ?>>
+
+			<div class="product-chunk">
+
+				<img src=<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $value->slug . '.svg' ?>>
                  <p><?php echo $value->description ?></p>
-                 <a href=<?php echo get_term_link($value) ?>> <?php echo $value->name ?> stuff</a>
+                 <button class="product-link"><a href=<?php echo get_term_link($value) ?>> <?php echo $value->name ?> stuff</a></button>
 	
-				 </div>
-		<?php endforeach;
-	wp_reset_postdata(); ?>
+			</div>
+			<?php endforeach;
+			wp_reset_postdata(); ?>
 				
 		</section>
 
@@ -35,41 +33,55 @@ get_header(); ?>
 
 
 		<!-- //journal section -->
-<section>	
-		<h2>Inhabitent Journal</h2>
+			<section>	
+				<h2>Inhabitent Journal</h2>
 	
-		<div class="post-info">
-			<?php
-		$latest_posts = inhabitent_get_latest_posts();
-		foreach ($latest_posts as $post) : setup_postdata($post);
-		?>
-
-			<div>
+				<div class="post-info">
 					<?php
-				if (has_post_thumbnail()) {
-					the_post_thumbnail('medium_large');
-				}
-				?>
-			<div class="post-data">
+					$latest_posts = inhabitent_get_latest_posts();
+					foreach ($latest_posts as $post) : setup_postdata($post);
+					?>
 
-				<?php single_post_title(); ?>
-					<button><a href = "<?php the_permalink(); ?>">Read entry</a></button>
+					<div class="post-chunk">
+						<?php
+						if (has_post_thumbnail()) {
+						the_post_thumbnail('medium_large');
+						}
+						?>
 
-					<?php the_date();
-				echo comments_number();
-				the_title(); ?>
-			</div>
-				</div>	
-						<?php	
+						<div class="post-data">
+							<div class="high-line">
+								<?php the_date();
+								echo comments_number();?>
+							</div>
+							<div class="journal-title"><?php
+							the_title(); ?></div>
+							<button><a href = "<?php the_permalink(); ?>">Read entry</a></button>
+						</div>
+					</div>	
+
+					<?php	
 					endforeach;
 					wp_reset_postdata();
 					?>
 						
-		</div>
+				</div>
 	
-</section>	
+			</section>	
+
+			<!-- lastest adventures section -->
+
+		<h2>Latest Adventures</h2>
+
+		<section class="latest-adventures">
+					<div class="one"></div>
+					<div class="two"></div>
+					<div class="three"></div>
+					<div class="four"></div>
+
+        </section>
 		</main><!-- #main -->
-	</div><!-- #primary -->
+</div><!-- #primary -->
 
 
 	

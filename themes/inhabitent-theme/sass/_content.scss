@@ -1,7 +1,9 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-
+body{
+  font-family: 'Merriweather Web';
+}
 /* Posts and pages */
 
 .sticky {
@@ -46,4 +48,22 @@
 }
 .bypostauthor {
   display: block;
+}
+
+// .entry-title{
+//   display:none;
+// }
+
+h2{
+  text-align:
+  center;
+  text-transform:uppercase;
+  font-weight:200;
+  font-size:35px;
+}
+
+.contact-sidebar{
+  i{
+    padding-top:25px;
+  }
 }

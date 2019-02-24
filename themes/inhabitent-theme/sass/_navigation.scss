@@ -98,7 +98,7 @@ a {
 .site-header {
   display: flex;
   height: 40px;
-  position: absolute;
+  position: fixed;
 }
 
 /* Small menu. */
@@ -148,4 +148,9 @@ a {
 
 .menu-homepage-menu-container li {
   padding: 10px;
+
+  li{
+    color:white; 
+  }
 }
+

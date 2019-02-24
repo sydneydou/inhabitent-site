@@ -20,7 +20,8 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 			<section>
-			<?php $product_types=get_terms("product_type")?>
+				<div class="product-chunk">
+			<?php $product_types=get_terms("product_type");?>
 			
 			<?php foreach ($product_types as $value): setup_postdata($value);?>
 			<div>
@@ -28,10 +29,12 @@ get_header(); ?>
                  <a href=<?php echo get_term_link($value)?>> <?php echo $value->name?></a>
 	
 				 </div>
+</div>
 		<?php endforeach; wp_reset_postdata();?>
 				
 			</section>
 			<section>
+				<div class="shop-loop">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -49,6 +52,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+</div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
