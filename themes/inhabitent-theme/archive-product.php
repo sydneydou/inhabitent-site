@@ -14,23 +14,22 @@ get_header(); ?>
 
 			<header class="page-header">
 				
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
 			</header><!-- .page-header -->
-			<section>
+			<section class="shop-push">
+				<h2> Shop Stuff </h2>
 				<div class="product-chunk">
-			<?php $product_types=get_terms("product_type");?>
+					<?php $product_types=get_terms("product_type");?>
 			
-			<?php foreach ($product_types as $value): setup_postdata($value);?>
-			<div>
+					<?php foreach ($product_types as $value): setup_postdata($value);?>
 			
-                 <a href=<?php echo get_term_link($value)?>> <?php echo $value->name?></a>
+			
+                	 <a href=<?php echo get_term_link($value)?>> <?php echo $value->name?></a>
 	
-				 </div>
-</div>
+
 		<?php endforeach; wp_reset_postdata();?>
+
+					 </div>
+	</div>
 				
 			</section>
 			<section>

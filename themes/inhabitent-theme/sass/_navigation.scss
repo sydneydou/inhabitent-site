@@ -31,6 +31,10 @@ a {
   display: block;
   width: 100%;
   padding-left: 600px;
+  
+  a{
+    color:white;
+  }
 
   ul {
     display: none;
@@ -99,6 +103,8 @@ a {
   display: flex;
   height: 40px;
   position: fixed;
+  font-family: 'Novecento Sans Web';
+  
 }
 
 /* Small menu. */
@@ -144,6 +150,7 @@ a {
   height: 30px;
   background-position-x: right 50px;
   background-position-x: 9em;
+  margin-top: 5px;
 }
 
 .menu-homepage-menu-container li {

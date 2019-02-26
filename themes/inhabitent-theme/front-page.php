@@ -51,8 +51,9 @@ get_header(); ?>
 
 						<div class="post-data">
 							<div class="high-line">
-								<?php the_date();
-								echo comments_number();?>
+								<?php the_date();?>
+								/
+								<?php echo comments_number();?>
 							</div>
 							<div class="journal-title"><?php
 							the_title(); ?></div>
@@ -74,12 +75,13 @@ get_header(); ?>
 		<h2>Latest Adventures</h2>
 
 		<section class="latest-adventures">
-					<div class="one"></div>
-					<div class="two"></div>
-					<div class="three"></div>
-					<div class="four"></div>
+					<div class="one"><span>Getting Back to Nature in a Canoe</span> <button>Read More</button></div>
+					<div class="two"><span>A Night with Friends at the Beach </span><button>Read More</button></div>
+					<div class="three"><span>Taking in the View at Big Mountain </span><button>Read More</button></div>
+					<div class="four"><span>Star-Gazing at the Night Sky</span> <button>Read More</button></div>
 
-        </section>
+		</section>
+		<button class="adventure-but">More Adventures</button>
 		</main><!-- #main -->
 </div><!-- #primary -->
 

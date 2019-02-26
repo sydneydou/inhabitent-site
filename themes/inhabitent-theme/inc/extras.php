@@ -67,3 +67,12 @@ function inhabitent_products($query)
 }
 
 add_action('pre_get_posts', 'inhabitent_products', 1);
+
+add_filter( 'get_the_archive_title', 'change_shop_title');
+function change_shop_title( $title ) {
+
+    if(is_tax( 'product_type' )){$title=single_cat_title( '', false );}
+
+   return $title;
+
+}
