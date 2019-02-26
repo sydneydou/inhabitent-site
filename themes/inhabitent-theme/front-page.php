@@ -8,6 +8,7 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
+	<div class="logo"><img src="<?php echo get_template_directory_uri() ?>/logos/inhabitent-logo-full.svg"/></div>
 		<section class="front-hero-image"> </section>
 			<h2> Shop Stuff </h2>
 		<section class="shop-name">
@@ -23,7 +24,7 @@ get_header(); ?>
 	
 			</div>
 			<?php endforeach;
-			wp_reset_postdata(); ?>
+		wp_reset_postdata(); ?>
 				
 		</section>
 
@@ -38,33 +39,33 @@ get_header(); ?>
 	
 				<div class="post-info">
 					<?php
-					$latest_posts = inhabitent_get_latest_posts();
-					foreach ($latest_posts as $post) : setup_postdata($post);
-					?>
+				$latest_posts = inhabitent_get_latest_posts();
+				foreach ($latest_posts as $post) : setup_postdata($post);
+				?>
 
 					<div class="post-chunk">
 						<?php
-						if (has_post_thumbnail()) {
+					if (has_post_thumbnail()) {
 						the_post_thumbnail('medium_large');
-						}
-						?>
+					}
+					?>
 
 						<div class="post-data">
 							<div class="high-line">
-								<?php the_date();?>
+								<?php the_date(); ?>
 								/
-								<?php echo comments_number();?>
+								<?php echo comments_number(); ?>
 							</div>
 							<div class="journal-title"><?php
-							the_title(); ?></div>
+																																	the_title(); ?></div>
 							<button><a href = "<?php the_permalink(); ?>">Read entry</a></button>
 						</div>
 					</div>	
 
 					<?php	
-					endforeach;
-					wp_reset_postdata();
-					?>
+				endforeach;
+				wp_reset_postdata();
+				?>
 						
 				</div>
 	

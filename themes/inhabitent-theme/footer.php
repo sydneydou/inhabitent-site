@@ -17,7 +17,7 @@
 					<h2> Contact Info</h2>
 				<p><i class="fas fa-envelope"></i> info@inhabitent.com </p>
 				
-				<p><i class="fas fa-phone"></i> 778-456-7891</p>
+				<p><i class="fas fa-phone"></i> <a href="tel:778-456-7891">778-456-7891</a></p>
 				<i class="fab fa-facebook-square"></i>
 				<i class="fab fa-twitter-square"></i>
 				<i class="fab fa-google-plus-square"></i>
