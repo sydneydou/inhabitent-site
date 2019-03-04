@@ -1,7 +1,7 @@
 {
-  "name": "redstarter",
+  "name": "inhabitent",
   "version": "1.1.0",
-  "description": "A starter theme for RED students, based on Underscores.",
+  "description": "A theme for project 4 at RED Academy",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.23.6",
