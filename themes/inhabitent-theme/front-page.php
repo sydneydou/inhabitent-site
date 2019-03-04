@@ -8,28 +8,29 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-	<div class="logo"><img src="<?php echo get_template_directory_uri() ?>/logos/inhabitent-logo-full.svg"/></div>
-		<section class="front-hero-image"> </section>
-			<h2> Shop Stuff </h2>
-		<section class="shop-name">
+	<div class="logo"><img alt="Front Hero Image" src="<?php echo get_template_directory_uri() ?>/logos/inhabitent-logo-full.svg"/>
+	</div>
+	<section class="front-hero-image"> </section>
+		<h2> Shop Stuff </h2>
+	<section class="shop-name">
 			
 			<?php $product_types = get_terms("product_type") ?>
 			<?php foreach ($product_types as $value) : setup_postdata($value); ?>
 
 			<div class="product-chunk">
 
-				<img src=<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $value->slug . '.svg' ?>>
+				<img alt="Product Type Icons" src=<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $value->slug . '.svg' ?>>
                  <p><?php echo $value->description ?></p>
-                 <button class="product-link"><a href=<?php echo get_term_link($value) ?>> <?php echo $value->name ?> stuff</a></button>
+                 <a class="button-general" href=<?php echo get_term_link($value) ?>><span class="button-text"><?php echo $value->name ?> stuff</span></a>
 	
 			</div>
 			<?php endforeach;
 		wp_reset_postdata(); ?>
 				
-		</section>
+	</section>
 
 
-		<main id="main" class="site-main" role="main">
+	<main id="main" class="site-main" role="main">
 	
 
 
@@ -39,16 +40,16 @@ get_header(); ?>
 	
 				<div class="post-info">
 					<?php
-				$latest_posts = inhabitent_get_latest_posts();
-				foreach ($latest_posts as $post) : setup_postdata($post);
-				?>
+					$latest_posts = inhabitent_get_latest_posts();
+					foreach ($latest_posts as $post) : setup_postdata($post);
+					?>
 
 					<div class="post-chunk">
 						<?php
-					if (has_post_thumbnail()) {
+						if (has_post_thumbnail()) {
 						the_post_thumbnail('medium_large');
-					}
-					?>
+						}
+						?>
 
 						<div class="post-data">
 							<div class="high-line">
@@ -57,17 +58,18 @@ get_header(); ?>
 								<?php echo comments_number(); ?>
 							</div>
 							<div class="journal-title"><?php
-																																	the_title(); ?></div>
-							<button><a href = "<?php the_permalink(); ?>">Read entry</a></button>
-						</div>
-					</div>	
-
-					<?php	
-				endforeach;
-				wp_reset_postdata();
-				?>
+								the_title(); ?>
+							</div>
+								<a class="readmore-button" href = "<?php the_permalink(); ?>">Read entry</a>
+						</div>	
 						
-				</div>
+					</div>
+
+						<?php	
+						endforeach;
+						wp_reset_postdata();
+						?>
+				</div>	
 	
 			</section>	
 
@@ -83,7 +85,7 @@ get_header(); ?>
 
 		</section>
 		<button class="adventure-but">More Adventures</button>
-		</main><!-- #main -->
+	</main><!-- #main -->
 </div><!-- #primary -->
 
 

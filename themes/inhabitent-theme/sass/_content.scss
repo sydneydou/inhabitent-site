@@ -90,3 +90,15 @@ h2{
   .cat-links{
     padding-right:15px;
   }
+
+
+  .readmore-button{
+    border: 1px solid black;
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px;
+    /* width: 10px; */
+    text-decoration: none;
+    font-family:$font__fam-main;
+  }

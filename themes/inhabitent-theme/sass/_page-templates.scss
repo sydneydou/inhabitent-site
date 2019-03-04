@@ -6,24 +6,30 @@
 
 .front-hero-image {
   background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
- url('../../images/home-hero.jpg')no-repeat;
- background-size:cover,cover;
- margin-top: -2em;
+  url('../../images/home-hero.jpg')no-repeat;
+  background-size:cover,cover;
+  margin-top: -2em;
   background-position: center, center;
-  height: 700px;
+  height: 800px;
   
 }
 .home{
-.content-area {
-  .logo{
-  img{
+  display:block;
+
+  .content-area {
+     .logo img{
+      
   position: absolute;
   right:500px;
   top:200px;
   }
 }
+
+.site-header{
+  margin-top:40px;
+  }
 }
-}
+
   
 
 
@@ -52,7 +58,7 @@
   .journal-title{
         text-align: left;
         font-size: 20px;
-        color: $color__baackground;
+        color: $color__background;
         text-transform: uppercase;
         font-weight: 600;
         height: 70px;
@@ -78,15 +84,19 @@ h2{
 }
 a{
   color: #000;
+  margin-left: -18em;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 100;
   font-size: 12px;
   width: 100px;
+  
 }
-  }
+margin-bottom: 20px;
+}
+  
 
-.hero-image-header {
+.hero-image-header{
   height: 700px;
 }
 
@@ -97,13 +107,24 @@ a{
 .adventure-but{
   margin-right: 875px;
   margin-bottom: 5em;
-  background-color: $color__baackground;
+  background-color: $color__background;
   height: 45px;
   width: 200px;
   text-transform: uppercase;
   color: #fff;
 }
 
+.button-general{
+  background-color: $color__background;
+  height: 45px;
+  width: 200px;
+  text-transform: uppercase;
+  text-decoration:none;
+  padding: 10px;
+  font-size: 14px;
+  font-family:$font__fam-main;
+  color:white;
+}
  
 .latest-adventures{
   display:
@@ -170,8 +191,7 @@ a{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../images/adventure-photos/night-sky.jpg');
     background-size: cover;
     grid-column:3 / 4;
-    background-color: rgba(0,0,0,.35);
-   
+    background-color: rgba(0,0,0,.35);  
     grid-row: 2 / 3;
     border-left: 10px solid white;
     font-size: 25px;
@@ -250,7 +270,7 @@ a{
     font-size: 14px;
     padding-top: 50px;
     margin-bottom:0;
-    font-family:$font__fam-main
+    font-family:$font__fam-main;
     font-weight: 200;
   }
 
@@ -339,14 +359,13 @@ a{
 
 .shop-push{
   padding-top: 40px;
-  margin-top: 90px;
+  margin-top: 7px;
   h2{
     font-weight: 800;
   }
 }
 
 .post-type-archive img{
- 
   height: 200px;
 }
 .post-type-archive .main-navigation a{
@@ -359,6 +378,8 @@ a{
 .archive .type-product .entry-title{
   padding-left:0;
 }
+
+
 
 .post-type-archive {
 
@@ -413,6 +434,17 @@ justify-content: space-around;
   text-align: center;
 }
 
+.type-post{
+.entry-header img{
+  margin-left: 8.65em;
+}
+}
+
+.single{
+  .entry-header img{
+    margin-left:0;
+  }
+}
 .single-product{
   .entry-meta{
     display:none;
@@ -497,8 +529,12 @@ justify-content: space-around;
   bottom: 436px;
   width: 450px;
   left: 138px;
-  background-color: $color__baackground;
+  background-color: $color__background;
   height: 100px;
+}
+
+.readmore-button{
+  margin-left: 11.5em;
 }
 
 .single .entry-meta{
@@ -507,7 +543,7 @@ justify-content: space-around;
   color: #fff;
   font-size: 14px;
   left: 350px;
-  background-color: $color__baackground;
+  background-color: $color__background;
   width: 400px;
   text-transform: uppercase;
 }
@@ -515,7 +551,7 @@ justify-content: space-around;
   position: relative;
   bottom: 436px;
   width: 450px;
-  background-color: $color__baackground;
+  background-color: $color__background;
   height: 100px;
 
   a{
@@ -535,7 +571,7 @@ justify-content: space-around;
   font-family: $font__fam-main;
   a{
     text-decoration:none;
-    color:$color__baackground;
+    color:$color__background;
   }
   
 }
@@ -595,7 +631,7 @@ justify-content: space-around;
     position: relative;
     bottom: 436px;
     width: 450px;
-    background-color: $color__baackground;
+    background-color: $color__background;
     height: 100px;
     a{
       color:white;
@@ -605,6 +641,7 @@ justify-content: space-around;
 }
 .single-post .product-bundle{
   height: 550px;
+  margin-top: 3em;
 }
 
 .single-post {
@@ -632,7 +669,7 @@ justify-content: space-around;
   color: #fff;
   font-size: 14px;
   left: 378px;
-  background-color: $color__baackground;
+  background-color: $color__background;
   width: 400px;
   text-transform: uppercase;
 }
@@ -640,8 +677,7 @@ justify-content: space-around;
 
 .single-main{
   display:flex;
-  margin-top: 50px;
-  width:70%;
+  
 
   img{
     width:750px;
@@ -662,6 +698,7 @@ justify-content: space-around;
 }
 .single-post{
   .content-area{
+    width: 70%;
     padding-top: 40px;
     margin-right: 40px;
     margin-left: 8em;
@@ -702,17 +739,31 @@ justify-content: space-around;
 
 .page{
   text-align:center;
-  display:flex;
+  // display:flex;
 
+.hero-image-header{
+  height:800px;
+}
 }
 
 
 
-.page-id-32 .entry-content p{
+.page-id-32{
+.entry-content p{
   padding-right:10em;
   padding-left:10em;
+  margin: 0 auto;
+  width: 70%;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
+.site-header{
+  margin-top:22px;
+}
+
+}
 
 
 

@@ -14,19 +14,15 @@ get_header(); ?>
 					<?php echo '<h1 class="page-title">'.single_term_title().'</h1>'; ?>
 				</div>
 					<div class="product-chunk">
-						<?php echo '<h1 class="page-title">'.term_description().'</h1>'; ?>
+						<?php echo '<div class="page-title">'.term_description().'</div>'; ?>
 					</div>
-				</div>
-				<div class="shop-loop">
-            		<?php while ( have_posts() ) : the_post(); ?>
-
-
-					<?php
-					get_template_part( 'template-parts/content', 'shop' );
-					?>
-
-					<?php endwhile; ?>
-				</div>
+					<div class="shop-loop">
+            			<?php while ( have_posts() ) : the_post(); ?>
+						<?php
+						get_template_part( 'template-parts/content', 'shop' );
+						?>
+						<?php endwhile; ?>
+					</div>
 			</div>		
 		</main><!-- #main -->
 	</div><!-- #primary -->
