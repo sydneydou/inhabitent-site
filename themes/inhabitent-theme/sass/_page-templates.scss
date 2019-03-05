@@ -125,6 +125,9 @@ margin-bottom: 20px;
   font-family:$font__fam-main;
   color:white;
 }
+.button-general ::hover{
+  
+}
  
 .latest-adventures{
   display:
@@ -442,7 +445,7 @@ justify-content: space-around;
 
 .single{
   .entry-header img{
-    margin-left:0;
+    margin-left:85px;
   }
 }
 .single-product{
@@ -534,8 +537,11 @@ justify-content: space-around;
 }
 
 .readmore-button{
-  margin-left: 11.5em;
+  margin-left:12em;
+
 }
+
+
 
 .single .entry-meta{
   position: relative;
@@ -746,9 +752,12 @@ justify-content: space-around;
 }
 }
 
+.journalpage .entry-header img{
+  margin:0;
+}
 
 
-.page-id-32{
+.about{
 .entry-content p{
   padding-right:10em;
   padding-left:10em;
@@ -768,16 +777,14 @@ justify-content: space-around;
 
 
 //**find us page
-
-.page-id-51 .main-navigation a{
+.findus .main-navigation a{
   color:#248A83;
-}
-.page-id-51 .front-logo{
+}.findus .front-logo{
   background-image: url(../../logos/inhabitent-logo-tent.svg);
 }
 
 
-  .page-id-51{
+.findus{
 
    .site-header{
     border-bottom:1px solid #e1e1e1;
@@ -797,8 +804,7 @@ justify-content: space-around;
       padding-left: 8em;
     }
 }
-
-.page-id-51 .entry-content{
+.findus .entry-content{
   padding-left:8em;
   text-align:left;
 
@@ -827,5 +833,50 @@ h2{
 
 .findusmap{
   height:15em;
-  width:500px;
+  width:800px;
+}
+
+
+.date article{
+  border:none;
+  margin-bottom: 4em;
+}
+
+.findus figure{
+  margin-left:4px;
+
+}
+
+.search-results{
+  .entry-summary{
+    margin-left: 5.5em;
+    margin-right: 5em;
+    font-size: 15px;
+    margin-top: -26px;
+  }
+ .entry-title a{
+  color:$color__background;
+}
+.main-navigation a{
+  color:#248A83;
+}
+.site-header{
+  border-bottom: 1px solid #e1e1e1;
+}
+.front-logo{
+  background-image: url(../../logos/inhabitent-logo-tent.svg);
+}
+
+.search-pagination{
+  margin-left: 5em;
+  margin-top: 2em;
+  margin-bottom:2em;
+  color:$color__background;
+
+  a{
+    color:$color__background;
+    text-decoration: none;
+    padding:5px;
+  }
+}
 }

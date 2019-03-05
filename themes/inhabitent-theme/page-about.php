@@ -7,7 +7,11 @@
  * Template Name: page-about 
  *  @package RED_Starter_Theme
  */
+?>
+<div class="about">
+	<?php
 get_header(); ?>
+
    
 
 	<div id="primary" class="content-area">
@@ -21,4 +25,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+</div>
 <?php get_footer(); ?>

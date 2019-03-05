@@ -26,9 +26,8 @@ a {
 
 .main-navigation {
   clear: both;
-  display: block;
-  width: 100%;
-  padding-left: 600px;
+  display: flex;
+  
   
   a{
     color:white;
@@ -98,13 +97,26 @@ a {
 }
 
 .site-header {
-  display: flex;
-  height: 40px;
-  position: fixed;
-  font-family: 'Novecento Sans Web';
+      display: flex;
+    height: 40px;
+    -ms-flex-pack: distribute;
+    justify-content: space-between;
+    margin:0 auto;
+    position: fixed;
+    font-family: Novecento Sans Web;
   
 }
 
+.main-navigation{
+  margin-right: 5em;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: 1120px;
+  margin: 0 auto;
+  margin-left: 10em;
+}
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -144,10 +156,8 @@ a {
   background-image: url(../../logos/inhabitent-logo-tent-white.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 500px;
+  width: 50px;
   height: 30px;
-  background-position-x: right 50px;
-  background-position-x: 9em;
   margin-top: 5px;
 }
 
@@ -159,3 +169,50 @@ a {
   }
 }
 
+.search-bar{
+  margin-top: .6em;
+  form{
+    display:inline-block;
+    margin-left:10px;
+    margin-right:10px;
+  fieldset{
+    // width: 10px;
+    margin:0;
+    padding:0;
+    padding:0 .75rem;
+   .fa-search{
+     color:white;
+   }
+  input{
+  transition: all 0.3s ease-in; 
+  width:0px;
+  color:white;
+  display:inline-block;
+ } 
+ ::placeholder{
+  color:white;
+  text-transform:uppercase;
+}
+
+  }
+}
+
+label{
+  float:right;
+}
+}
+
+.active{
+  form{
+  fieldset{
+  input{
+  width:200px;
+  &:focus{
+    outline:none;
+  }
+  }
+  
+ 
+}
+  }
+}

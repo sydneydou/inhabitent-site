@@ -43,6 +43,46 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.error404 .page-content {
+  margin-left: 8em;
+  margin-top: 5em;
+  margin-right: 2em; }
+
+.error404 .main-navigation a {
+  color: #248A83; }
+
+.error404 .site-header {
+  border-bottom: 1px solid #e1e1e1; }
+
+.error404 .front-logo {
+  background-image: url(../../logos/inhabitent-logo-tent.svg); }
+
+.error404 .content-main {
+  margin-bottom: 3em; }
+
+.error404 .search-form {
+  margin-left: -13px; }
+
+.error404 h1, .error404 h2 {
+  font-family: "Novecento Sans Web";
+  text-align: left; }
+
+.error404 h1 {
+  font-size: 40px;
+  text-transform: uppercase; }
+
+.error404 h2 {
+  font-weight: 600;
+  font-size: 25px; }
+
+.error404 .widget li {
+  list-style-type: none; }
+  .error404 .widget li a {
+    color: #248A83;
+    line-height: 1.5;
+    text-decoration: none;
+    font-size: 15px; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -200,9 +240,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  border: none; }
 
 legend {
   border: 0;
@@ -420,9 +458,8 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  background: transparent;
+  border: none; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -458,9 +495,9 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  width: 100%;
-  padding-left: 600px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .main-navigation a {
     color: white; }
   .main-navigation ul {
@@ -499,8 +536,26 @@ a {
   display: -ms-flexbox;
   display: flex;
   height: 40px;
+  -ms-flex-pack: distribute;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
   position: fixed;
-  font-family: 'Novecento Sans Web'; }
+  font-family: Novecento Sans Web; }
+
+.main-navigation {
+  margin-right: 5em; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1120px;
+  margin: 0 auto;
+  margin-left: 10em; }
 
 /* Small menu. */
 .menu-toggle,
@@ -536,16 +591,49 @@ a {
   background-image: url(../../logos/inhabitent-logo-tent-white.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 500px;
+  width: 50px;
   height: 30px;
-  background-position-x: right 50px;
-  background-position-x: 9em;
   margin-top: 5px; }
 
 .menu-homepage-menu-container li {
   padding: 10px; }
   .menu-homepage-menu-container li li {
     color: white; }
+
+.search-bar {
+  margin-top: .6em; }
+  .search-bar form {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .search-bar form fieldset {
+      margin: 0;
+      padding: 0;
+      padding: 0 .75rem; }
+      .search-bar form fieldset .fa-search {
+        color: white; }
+      .search-bar form fieldset input {
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        width: 0px;
+        color: white;
+        display: inline-block; }
+      .search-bar form fieldset ::-webkit-input-placeholder {
+        color: white;
+        text-transform: uppercase; }
+      .search-bar form fieldset ::-ms-input-placeholder {
+        color: white;
+        text-transform: uppercase; }
+      .search-bar form fieldset ::placeholder {
+        color: white;
+        text-transform: uppercase; }
+  .search-bar label {
+    float: right; }
+
+.active form fieldset input {
+  width: 200px; }
+  .active form fieldset input:focus {
+    outline: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1108,7 +1196,7 @@ h2 {
   margin-left: 8.65em; }
 
 .single .entry-header img {
-  margin-left: 0; }
+  margin-left: 85px; }
 
 .single-product .entry-meta {
   display: none; }
@@ -1188,7 +1276,7 @@ h2 {
   height: 100px; }
 
 .readmore-button {
-  margin-left: 11.5em; }
+  margin-left: 12em; }
 
 .single .entry-meta {
   position: relative;
@@ -1361,7 +1449,10 @@ h2 {
   .page .hero-image-header {
     height: 800px; }
 
-.page-id-32 .entry-content p {
+.journalpage .entry-header img {
+  margin: 0; }
+
+.about .entry-content p {
   padding-right: 10em;
   padding-left: 10em;
   margin: 0 auto;
@@ -1370,16 +1461,16 @@ h2 {
   font-size: 14px;
   line-height: 1.5; }
 
-.page-id-32 .site-header {
+.about .site-header {
   margin-top: 22px; }
 
-.page-id-51 .main-navigation a {
+.findus .main-navigation a {
   color: #248A83; }
 
-.page-id-51 .front-logo {
+.findus .front-logo {
   background-image: url(../../logos/inhabitent-logo-tent.svg); }
 
-.page-id-51 .site-header {
+.findus .site-header {
   border-bottom: 1px solid #e1e1e1; }
 
 .title-findus {
@@ -1392,10 +1483,10 @@ h2 {
     text-align: left;
     padding-left: 8em; }
 
-.page-id-51 .entry-content {
+.findus .entry-content {
   padding-left: 8em;
   text-align: left; }
-  .page-id-51 .entry-content h2 {
+  .findus .entry-content h2 {
     font-weight: 800;
     text-align: left;
     font-size: 30px; }
@@ -1410,4 +1501,39 @@ h2 {
 
 .findusmap {
   height: 15em;
-  width: 500px; }
+  width: 800px; }
+
+.date article {
+  border: none;
+  margin-bottom: 4em; }
+
+.findus figure {
+  margin-left: 4px; }
+
+.search-results .entry-summary {
+  margin-left: 5.5em;
+  margin-right: 5em;
+  font-size: 15px;
+  margin-top: -26px; }
+
+.search-results .entry-title a {
+  color: #248A83; }
+
+.search-results .main-navigation a {
+  color: #248A83; }
+
+.search-results .site-header {
+  border-bottom: 1px solid #e1e1e1; }
+
+.search-results .front-logo {
+  background-image: url(../../logos/inhabitent-logo-tent.svg); }
+
+.search-results .search-pagination {
+  margin-left: 5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: #248A83; }
+  .search-results .search-pagination a {
+    color: #248A83;
+    text-decoration: none;
+    padding: 5px; }

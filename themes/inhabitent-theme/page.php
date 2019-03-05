@@ -5,8 +5,9 @@
  *
  * @package RED_Starter_Theme
  */
-
-get_header(); ?>
+?>
+<div class="findus">
+<?php get_header(); ?>
 <div class="content-main">
 
 	<div id="primary" class="content-area">
@@ -29,3 +30,4 @@ get_header(); ?>
 	<?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>
+</div>

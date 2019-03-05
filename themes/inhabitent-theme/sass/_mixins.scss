@@ -13,3 +13,57 @@
 
 
 //404 page
+
+.error404{
+	.page-content{
+		margin-left: 8em;
+		margin-top: 5em;
+		margin-right: 2em;
+	
+	}
+	.main-navigation a{
+		color:#248A83;
+	  }
+
+	.site-header{
+		border-bottom: 1px solid #e1e1e1;
+	  }
+	
+	.front-logo{
+		background-image: url(../../logos/inhabitent-logo-tent.svg);
+	  }
+	.content-main{
+		margin-bottom: 3em;
+	}
+	
+	.search-form{
+		margin-left: -13px;
+	}
+
+	h1, h2{
+		font-family:$font__fam-main;
+		text-align:left;
+	}
+
+	h1{
+		font-size: 40px;
+    	text-transform: uppercase;
+	}	
+
+	h2{
+		font-weight: 600;
+		font-size:25px;
+	}
+
+	.widget li{
+		list-style-type: none;
+
+		a{
+			color:$color__background;
+			line-height:1.5;
+			text-decoration: none;
+			font-size: 15px;
+		}
+	}
+
+}

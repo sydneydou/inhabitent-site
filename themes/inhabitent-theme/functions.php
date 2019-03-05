@@ -87,8 +87,8 @@ function red_starter_scripts() {
 	wp_enqueue_style( 'font-awesome-cdn', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), '5.7.2');
 
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'jquery'  );
-	wp_enqueue_style( 'search-js', get_template_directory_uri().'/build/js/search.min.js', array('jquery'));
+	wp_enqueue_script( 'jquery'  );
+	wp_enqueue_script( 'search-js', get_template_directory_uri().'/build/js/search.min.js', array('jquery'));
 
 
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
