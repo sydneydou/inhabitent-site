@@ -230,6 +230,12 @@ margin-bottom: 20px;
       margin-bottom:0;
       height: 105px;
     }
+
+  }
+
+  .product-chunk:hover{
+    border:1px solid #d99054;
+    border-top: 5px solid #d99054;
   }
   
   .product-link{
@@ -355,9 +361,7 @@ margin-bottom: 20px;
 }
 
   }
-  .archive .site-header{
-    border-bottom: 1px solid #e1e1e1;
-  }
+  
 
 
 .shop-push{
@@ -370,12 +374,6 @@ margin-bottom: 20px;
 
 .post-type-archive img{
   height: 200px;
-}
-.post-type-archive .main-navigation a{
-  color:#248A83;
-}
-.post-type-archive .front-logo{
-  background-image: url(../../logos/inhabitent-logo-tent.svg);
 }
 
 .archive .type-product .entry-title{
@@ -419,12 +417,7 @@ justify-content: space-around;
   padding-top: 5em;
     
 }
-.tax-product_type .main-navigation a{
-  color:#248A83;
-}
-.tax-product_type .front-logo{
-  background-image: url(../../logos/inhabitent-logo-tent.svg);
-} 
+
 
 .page-title-main{
   text-align: center;
@@ -452,14 +445,6 @@ justify-content: space-around;
   .entry-meta{
     display:none;
   }
-  .main-navigation a{
-    color:#248A83;
-    
-  }
-  .front-logo{
-    background-image: url(../../logos/inhabitent-logo-tent.svg);
-  } 
-  
 }
 
 .primary-content{
@@ -472,9 +457,7 @@ justify-content: space-around;
   width: 450px;
   margin-top: 4em;
 }
-.single-product .site-header{
-  border-bottom: 1px solid #e1e1e1;
-}
+
 
 .single-product .product-bundle{
   display: flex;
@@ -525,20 +508,111 @@ justify-content: space-around;
     }
 }
 //**journal page
+.blog{
 
-.blog
- .entry-title{
-  position: relative;
-  bottom: 436px;
-  width: 450px;
-  left: 138px;
-  background-color: $color__background;
-  height: 100px;
+  .single{
+
+    .content-area{
+      width:70%;
+    }
+    .widget-area {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      width:30%;
+      border-left: 1px solid #e1e1e1;
+      text-align:left;
+      margin-top: 0;
+    }
+  
+    .entry-title{
+      position: relative;
+      bottom: 436px;
+      width: 450px;
+      background-color: $color__background;
+      height: 100px;
+    
+      a{
+        text-decoration:none;
+        color:white;
+      }  
+    }
+    .entry-header{
+      height: 550px;
+    }
+    display:flex;
+  }
+
+  .entry-meta{
+    position: relative;
+    bottom: 214px;
+    color: #fff;
+    font-size: 14px;
+    left: 378px;
+    background-color: $color__background;
+    width: 400px;
+    text-transform: uppercase;
+  }
+
+  .entry-title{
+    position: relative;
+    bottom: 436px;
+    width: 450px;
+    left: 138px;
+    background-color: $color__background;
+    height: 100px;
+
+    a{
+      color:white;
+      font-size:30px;
+      text-decoration:none;
+    }
+    button{
+  display: flex;
+  margin-left: 135px;
+ 
+  }
+  }
+  
+  .entry-header{
+    height: 450px;
+  }
+
+  .site-content{
+    text-align:center;
+  }
+  .content-area{
+    margin-top: 40px;
+  }
+  article{
+    padding-bottom:3em;
+  }
+
+  .site-main{
+    margin-top:2em;
+  }
+
+  button{
+    display: flex;
+    margin-left: 135px;
+   
+  }
+
+  .entry-content p{
+    padding-left:0;
+  }
+
+  .type-post p{
+    margin-left: 9em;
+    margin-right: 2em;
+    font-size: 15px;
+    text-align: left;
+  
+  }
+
 }
 
 .readmore-button{
   margin-left:12em;
-
 }
 
 
@@ -553,22 +627,7 @@ justify-content: space-around;
   width: 400px;
   text-transform: uppercase;
 }
-.blog .single .entry-title{
-  position: relative;
-  bottom: 436px;
-  width: 450px;
-  background-color: $color__background;
-  height: 100px;
 
-  a{
-    text-decoration:none;
-    color:white;
-  }
-
-}
- .blog .single .entry-header{
-  height: 550px;
-}
 .single .entry-content{
   font-size:14px;
 }
@@ -581,51 +640,7 @@ justify-content: space-around;
   }
   
 }
-.blog .entry-header{
-  height: 450px;
-}
 
-  .blog .entry-title a{
-    color:white;
-    font-size:30px;
-    text-decoration:none;
-  }
-
-
-.blog .main-navigation a{
-  color:#248A83;
-}
-.blog .front-logo{
-  background-image: url(../../logos/inhabitent-logo-tent.svg);
-} 
-
-.blog{
-  .site-content{
-    text-align:center;
-  }
-  .content-area{
-    margin-top: 40px;
-  }
-  .site-header{
-    border-bottom: 1px solid #e1e1e1;
-  }
-  }
-
-.blog .single{
-  display:flex;
-  .content-area{
-    width:70%;
-  }
-  .widget-area {
-    flex-direction: column-reverse;
-    align-items: flex-end;
-    width:30%;
-    border-left: 1px solid #e1e1e1;
-    text-align:left;
-    margin-top: 0;
-  }
-
-}
 .single-post .entry-header{
   position:relative;
   
@@ -669,16 +684,7 @@ justify-content: space-around;
 .single-post .product-specific{
   margin-top:0;
 }
-.blog .entry-meta{
-  position: relative;
-  bottom: 214px;
-  color: #fff;
-  font-size: 14px;
-  left: 378px;
-  background-color: $color__background;
-  width: 400px;
-  text-transform: uppercase;
-}
+
 
 
 .single-main{
@@ -690,14 +696,7 @@ justify-content: space-around;
   }
 }
 
-.blog .entry-content p{
-  padding-left:0;
-}
-.blog button{
-  display: flex;
-  margin-left: 135px;
- 
-}
+
 
 .single-post .site-content{
   display: flex;
@@ -709,25 +708,8 @@ justify-content: space-around;
     margin-right: 40px;
     margin-left: 8em;
   }
-  .main-navigation a{
-    color:#248A83;
-    
-  }
-  .front-logo{
-    background-image: url(../../logos/inhabitent-logo-tent.svg);
-  } 
-  .site-header{
-    border-bottom: 1px solid #e1e1e1;
-  }
- 
 }
-.blog .type-post p{
-  margin-left: 9em;
-  margin-right: 2em;
-  font-size: 15px;
-  text-align: left;
 
-}
 //** about page
 
 
@@ -771,27 +753,9 @@ justify-content: space-around;
 .site-header{
   margin-top:22px;
 }
-
 }
-
-
 
 //**find us page
-.findus .main-navigation a{
-  color:#248A83;
-}.findus .front-logo{
-  background-image: url(../../logos/inhabitent-logo-tent.svg);
-}
-
-
-.findus{
-
-   .site-header{
-    border-bottom:1px solid #e1e1e1;
-  }
-  
-}
-  
 .title-findus{
   padding-top: 50px;
   margin-bottom: 0;
@@ -857,15 +821,6 @@ h2{
  .entry-title a{
   color:$color__background;
 }
-.main-navigation a{
-  color:#248A83;
-}
-.site-header{
-  border-bottom: 1px solid #e1e1e1;
-}
-.front-logo{
-  background-image: url(../../logos/inhabitent-logo-tent.svg);
-}
 
 .search-pagination{
   margin-left: 5em;
@@ -878,5 +833,10 @@ h2{
     text-decoration: none;
     padding:5px;
   }
+
+}
+
+.site-main{
+  margin-top: 4em;
 }
 }

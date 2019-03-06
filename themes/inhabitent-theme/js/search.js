@@ -7,26 +7,26 @@
         //4. make focus when you click on it, click away=blur
         //2 event listener on the button, 1 click 1 blur
         //focus and blur on input
-
+        const $field = $(".search-field");
 
         $(".search-button").on("click", (event) => {
             event.preventDefault();
             $(".search-bar").toggleClass("active")
-            $(".search-field").focus();
+            $field.focus();
 
         });
 
-        $('.search-field').on('blur', () => {
+        $field.on('blur', () => {
 
-            if ($('.search-field').val().length > 0) {
+            if ($field.val().length > 0) {
                 return false;
             }
 
-            else if($(".search-bar").hasClass("active")){
+            else if ($(".search-bar").hasClass("active")) {
                 $(".search-bar").removeClass('active');
 
             }
-            
+
 
         });
 

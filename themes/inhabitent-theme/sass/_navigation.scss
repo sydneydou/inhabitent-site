@@ -161,8 +161,11 @@ a {
   margin-top: 5px;
 }
 
+
+
 .menu-homepage-menu-container li {
   padding: 10px;
+  text-transform: uppercase;
 
   li{
     color:white; 
@@ -170,6 +173,9 @@ a {
 }
 
 .search-bar{
+  .search-field{
+    border:none;
+  }
   margin-top: .6em;
   form{
     display:inline-block;
@@ -207,9 +213,11 @@ label{
 
 
 .home, .about{
-  .search-bar form fieldset .fa-search{
+  .search-bar {
+    margin-top:.6em;
+    form fieldset .fa-search{
 color:white;
-
+    }
 }
 }
 
@@ -235,4 +243,43 @@ color:#f0e4d1;
   }
   }
   }
+  }
+
+
+  .archive, .single-product, .blog, .single-post,.findus ,.search-results{
+
+    .site-header{
+      border-bottom: 1px solid #e1e1e1;
+      background-color: hsla(0,0%,100%,.85);
+      z-index:10;
+    }
+
+  }
+
+  .archive .site-header{
+    margin-top:-7px;
+  }
+
+  .post-type_archive, .tax-product_type, .single-product, .blog, .single-post, .findus, .search-results, .archive{
+    .front-logo{
+      background-image: url(../../logos/inhabitent-logo-tent.svg);
+    }
+    .main-navigation {
+      a{
+        color:#248A83;
+      }
+
+      a:hover{
+        color:black;
+      }
+    }
+    
+  }
+
+  .home, .about{
+    .main-navigation{
+      a:hover,.fa-search:hover{
+        color:#f0e4d1;
+      }
+    }
   }
