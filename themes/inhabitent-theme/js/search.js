@@ -16,7 +16,6 @@
 
         });
 
-
         $('.search-field').on('blur', () => {
 
             if ($('.search-field').val().length > 0) {
