@@ -5,11 +5,11 @@ Customized wordpress theme for a company selling gear for camping, as well as in
 This is a project using Wordpress as a CMS, utilizing PHP, CSS (Sass), HTML and JQuery for the Web Development Program at Red Academy.
 
 ## Screenshots
-![alt text](themes/inhabitent-home.png)
+![alt text](themes/inhabitent-theme/inhabitent-home.png)
 
-![alt text](themes/inhabitent-journal.png)
+![alt text](themes/inhabitent-theme/inhabitent-journal.png)
 
-![alt text](themes/inhabitent-shop.png)
+![alt text](themes/inhabitent-theme/inhabitent-shop.png)
 
 ## Getting Started
 
