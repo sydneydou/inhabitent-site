@@ -1103,7 +1103,8 @@ h2 {
     display: -ms-flexbox;
     display: flex;
     padding-left: 8em;
-    padding-top: 2em; }
+    padding-top: 2em;
+    text-align: left; }
   .site-footer .business-hours {
     padding-left: 6em; }
   .site-footer .copyright {
@@ -1472,7 +1473,8 @@ h2 {
   width: 70%;
   text-align: left;
   font-size: 14px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-bottom: 2em; }
 
 .about .site-header {
   margin-top: 22px; }

@@ -267,6 +267,7 @@ margin-bottom: 20px;
     display: flex;
     padding-left: 8em;
     padding-top: 2em;
+    text-align:left;
   }
 
   .business-hours {
@@ -726,8 +727,8 @@ justify-content: space-around;
 }
 
 .page{
+  
   text-align:center;
-  // display:flex;
 
 .hero-image-header{
   height:800px;
@@ -748,6 +749,7 @@ justify-content: space-around;
   text-align: left;
   font-size: 14px;
   line-height: 1.5;
+  margin-bottom: 2em;
 }
 
 .site-header{
