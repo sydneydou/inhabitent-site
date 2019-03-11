@@ -125,8 +125,8 @@ margin-bottom: 20px;
   font-family:$font__fam-main;
   color:white;
 }
-.button-general ::hover{
-  
+.button-general:hover{
+  color:white;
 }
  
 .latest-adventures{
@@ -254,6 +254,9 @@ margin-bottom: 20px;
   }
 }
 
+.day-of-week{
+  font-weight: 700;
+}
 //footer css
 .site-footer {
   background-image: url('../../logos/inhabitent-logo-text.svg'), url('../../images/dark-wood.png');

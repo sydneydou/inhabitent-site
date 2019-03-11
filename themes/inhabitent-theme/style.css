@@ -484,14 +484,14 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+a:hover, a:focus, a:active {
+  color: midnightblue; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
 
 /* Menus */
 .main-navigation {
@@ -988,6 +988,9 @@ h2 {
   font-family: "Novecento Sans Web";
   color: white; }
 
+.button-general:hover {
+  color: white; }
+
 .latest-adventures {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -1090,6 +1093,9 @@ h2 {
     .shop-name .product-link a {
       text-decoration: none;
       color: white; }
+
+.day-of-week {
+  font-weight: 700; }
 
 .site-footer {
   background-image: url("../../logos/inhabitent-logo-text.svg"), url("../../images/dark-wood.png");
